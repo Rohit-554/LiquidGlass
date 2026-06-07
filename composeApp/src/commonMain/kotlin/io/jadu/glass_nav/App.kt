@@ -8,7 +8,14 @@ import io.jadu.glass_nav.navigation.AppNavigation
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    GlassNavTheme {
         AppNavigation()
+    }
+}
+
+@Composable
+fun GlassNavTheme(content: @Composable () -> Unit) {
+    MaterialTheme {
+        content()
     }
 }
